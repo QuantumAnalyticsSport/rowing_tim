@@ -55,7 +55,7 @@ st.session_state.sAT = Intensity[arg_sAT]
 
 # OpenAI client
 
-
+API_KEY = st.secrets["openai"]["api_key"]
 # client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])  # Use secrets for security
 client = OpenAI(api_key = API_KEY)
 client_openai = OpenAI(api_key = API_KEY)
